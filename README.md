@@ -62,6 +62,10 @@ Create a Firebase project and enable Firebase Cloud Messaging. For local develop
 
 See `.env.example` for the local database variable names. Keep all real credentials in untracked local configuration or a secrets manager. Do not use real employee or payment data in development.
 
+## Author
+
+[Roman Kim](https://www.linkedin.com/in/roman-kim-3054613a9/)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
