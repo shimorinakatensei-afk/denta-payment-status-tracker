@@ -62,6 +62,10 @@ Create a Firebase project and enable Firebase Cloud Messaging. For local develop
 
 See `.env.example` for the local database variable names. Keep all real credentials in untracked local configuration or a secrets manager. Do not use real employee or payment data in development.
 
+## Public demo
+
+The v2.0 presentation preview is published at [denta-payment-status-tracker GitHub Pages](https://shimorinakatensei-afk.github.io/denta-payment-status-tracker/). It uses only fictional sample data and runs entirely in the browser.
+
 ## Interactive MVP demos
 
 Two standalone versions show the reimbursement journey after a member pays a dental provider upfront:
