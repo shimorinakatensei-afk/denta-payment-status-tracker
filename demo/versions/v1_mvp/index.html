@@ -63,11 +63,7 @@
     const demo = window.DENTA_DEMO_DATA;
     let selectedId = demo.claims[0].id;
     let filter = "all";
-    const events = [
-      { icon: "✓", title: "Reimbursement completed", detail: "Cleaning and exam · DNT-TEST-1039", when: "Nov 10 · 10:42 AM" },
-      { icon: "↻", title: "Claim submitted to the plan", detail: "Dental crown · DNT-TEST-1048", when: "Nov 05 · 2:16 PM" },
-      { icon: "!", title: "Invoice detail needed", detail: "Filling · DNT-TEST-1016", when: "Oct 28 · 9:08 AM" },
-    ];
+    const events = demo.events;
     const statusText = { processing: "In review", reimbursed: "Reimbursed", delayed: "Delayed", "needs-info": "Action needed" };
     const statusIcon = { processing: "↻", reimbursed: "✓", delayed: "◷", "needs-info": "!" };
     const money = value => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(value);
