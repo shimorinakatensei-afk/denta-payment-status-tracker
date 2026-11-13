@@ -77,7 +77,7 @@ Two standalone versions show the reimbursement journey after a member pays a den
 
 ### How to open
 
-Clone or download the repository, then open either HTML file directly in a browser. The demos need no server, package install, login, or network connection. Both read shared records from [demo/data/sample-data.js](demo/data/sample-data.js).
+Clone or download the repository, then open either HTML file directly in a browser. The demos need no server, package install, login, or network connection. Both read the fictional member profile, claims, and seeded notifications from [demo/data/sample-data.js](demo/data/sample-data.js); shared local styles are in `demo/assets/demo.css`.
 
 ### Sample data disclaimer
 
