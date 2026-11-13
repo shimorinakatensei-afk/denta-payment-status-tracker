@@ -64,4 +64,4 @@ See `.env.example` for the local database variable names. Keep all real credenti
 
 ## License
 
-No license has been selected yet.
+This project is licensed under the [MIT License](LICENSE).
