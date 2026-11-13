@@ -35,14 +35,15 @@ docker-compose.yml       Local PostgreSQL service
 
 ## Local setup
 
-Prerequisites: Java 21, Maven 3.6.3+, Node.js/npm, and Docker Compose.
+Prerequisites: Java 21, Maven 3.6.3+, Node.js 20.19+ (or 22.12+), npm, and Docker Compose.
 
-1. Copy `.env.example` to `.env` and set local PostgreSQL values. Keep `.env` private; it is ignored by Git.
-2. Start PostgreSQL: `docker compose --env-file .env up -d db`.
-3. In `backend/`, run `mvn spring-boot:run`. Set `DB_URL`, `DB_USERNAME`, and `DB_PASSWORD` in your local shell or IDE run configuration.
-4. In `frontend/`, run `npm install` and `npm run dev`.
+1. Copy `.env.example` to `.env`. Set `POSTGRES_USER` and `POSTGRES_PASSWORD`; keep this file private because it is ignored by Git.
+2. Keep `POSTGRES_DB` and the database name in `DB_URL` aligned. Set `DB_USERNAME` and `DB_PASSWORD` to the same local database user and password.
+3. Start PostgreSQL: `docker compose --env-file .env up -d db`.
+4. In `backend/`, run `mvn spring-boot:run`. Spring Boot reads `DB_URL`, `DB_USERNAME`, and `DB_PASSWORD` from your local shell or IDE run configuration.
+5. In `frontend/`, run `npm install` and `npm run dev`.
 
-The database service listens on port 5432. The API is configured for port 8080, and the Vite development server uses port 5173. The frontend API/WebSocket base URL can be configured with `VITE_API_BASE_URL` when the integration is added.
+Docker Compose reads `.env` for the database container; Spring Boot does not load that file automatically, so configure its three `DB_*` values in your shell or IDE. The database listens on port 5432, the API uses port 8080, and Vite uses port 5173. The frontend API/WebSocket base URL can be configured with `VITE_API_BASE_URL` when the integration is added.
 
 ## Firebase setup
 
