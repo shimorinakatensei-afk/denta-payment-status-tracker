@@ -62,6 +62,16 @@ Create a Firebase project and enable Firebase Cloud Messaging. For local develop
 
 See `.env.example` for the local database variable names. Keep all real credentials in untracked local configuration or a secrets manager. Do not use real employee or payment data in development.
 
+## Interactive MVP demo
+
+### v1.0 — reimbursement flow
+
+Open [demo/versions/v1_mvp/index.html](demo/versions/v1_mvp/index.html) directly in a browser. No server or install is needed. The demo shows an upfront dental payment, claim submission, plan review, reimbursement estimate, delay, and a missing-invoice-detail state that can be resolved.
+
+All sample records are AI-generated and fictional. They do not represent real people, patients, clinics, payment details, or card numbers. They are for MVP demonstration only. Shared data lives in [demo/data/sample-data.js](demo/data/sample-data.js).
+
+The demo simulates status changes locally. It does not contact a real payment provider, benefits plan, or notification service.
+
 ## Author
 
 [Roman Kim](https://www.linkedin.com/in/roman-kim-3054613a9/)
