@@ -62,15 +62,24 @@ Create a Firebase project and enable Firebase Cloud Messaging. For local develop
 
 See `.env.example` for the local database variable names. Keep all real credentials in untracked local configuration or a secrets manager. Do not use real employee or payment data in development.
 
-## Interactive MVP demo
+## Interactive MVP demos
 
-### v1.0 — reimbursement flow
+Two standalone versions show the reimbursement journey after a member pays a dental provider upfront:
 
-Open [demo/versions/v1_mvp/index.html](demo/versions/v1_mvp/index.html) directly in a browser. No server or install is needed. The demo shows an upfront dental payment, claim submission, plan review, reimbursement estimate, delay, and a missing-invoice-detail state that can be resolved.
+- **v1 MVP:** [demo/versions/v1_mvp/index.html](demo/versions/v1_mvp/index.html) — payment status, claim timeline, estimate, delay, and missing-information flows.
+- **v2.0:** [demo/versions/v2_0/index.html](demo/versions/v2_0/index.html) — a polished signed-in member portal with claim search and filters, notifications, issue reporting, and actions to resolve a delay or missing detail and simulate reimbursement.
+- **Quick preview:** [demo/index.html](demo/index.html) opens the v2.0 experience.
+- **Releases:** [v1.0](https://github.com/shimorinakatensei-afk/denta-payment-status-tracker/releases/tag/v1.0) · [v2.0](https://github.com/shimorinakatensei-afk/denta-payment-status-tracker/releases/tag/v2.0)
 
-All sample records are AI-generated and fictional. They do not represent real people, patients, clinics, payment details, or card numbers. They are for MVP demonstration only. Shared data lives in [demo/data/sample-data.js](demo/data/sample-data.js).
+### How to open
 
-The demo simulates status changes locally. It does not contact a real payment provider, benefits plan, or notification service.
+Clone or download the repository, then open either HTML file directly in a browser. The demos need no server, package install, login, or network connection. Both read shared records from [demo/data/sample-data.js](demo/data/sample-data.js).
+
+### Sample data disclaimer
+
+All sample data is AI-generated, fictional, and for MVP demonstration only. It does not describe real people, patients, clinics, payment records, or card details. The test-style names and IDs are deliberately synthetic. The same disclaimer appears at the top of the sample data file.
+
+The demos simulate status changes and issue reports in the open page. They do not contact a payment provider, benefits plan, backend, WebSocket service, or notification provider.
 
 ## Author
 
