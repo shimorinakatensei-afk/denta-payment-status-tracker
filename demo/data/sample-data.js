@@ -6,6 +6,11 @@ window.DENTA_DEMO_DATA = {
     memberId: "MEMBER-TEST-001",
     plan: "Demo Dental Plan",
   },
+  events: [
+    { icon: "✓", title: "Reimbursement completed", detail: "Cleaning and exam · DNT-TEST-1039", when: "Nov 10 · 10:42 AM" },
+    { icon: "↻", title: "Claim submitted to the plan", detail: "Dental crown · DNT-TEST-1048", when: "Nov 05 · 2:16 PM" },
+    { icon: "!", title: "Invoice detail needed", detail: "Filling · DNT-TEST-1016", when: "Oct 28 · 9:08 AM" },
+  ],
   claims: [
     {
       id: "DNT-TEST-1048",
