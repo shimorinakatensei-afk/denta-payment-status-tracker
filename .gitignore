@@ -1,0 +1,23 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+**/service-account*.json
+**/*firebase-adminsdk*.json
+*.pem
+*.key
+
+# Java / Maven
+**/target/
+*.class
+
+# Node / Vite
+**/node_modules/
+**/dist/
+frontend/.vite/
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
