@@ -1,0 +1,14 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: denta-payment-status-tracker
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/denta_payments}
+    username: ${DB_USERNAME:}
+    password: ${DB_PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
