@@ -92,3 +92,7 @@ The demos simulate status changes and issue reports in the open page. They do no
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Accessibility and responsive design
+
+The standalone demos share a local design system with mobile layouts, visible keyboard focus, text-and-icon status labels, reduced-motion support, and clearer delay and issue guidance. All sample content is AI-generated fiction for MVP demonstration only. No real patient, member, clinic, payment, or card data is used.
